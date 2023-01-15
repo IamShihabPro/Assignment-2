@@ -1,0 +1,332 @@
+/* Common Style */
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Work Sans', sans-serif;
+}  
+:root{ 
+    --primary-color:rgb(225, 53, 23);
+    --secondery-color: rgb(34, 206, 54);
+    --third-color: #757575;
+    --bg-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Header Style */
+header{ 
+    height: 940px; 
+    background: var(--bg-color);
+}
+/* Navber Style */
+.navbar{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 0px 228px; 
+    padding: 30px 0;
+}  
+.nav-title{ 
+    font-weight: 700; 
+    font-size: 35px;
+}
+.nav-item{ 
+    display: flex; 
+    list-style: none; 
+    align-items: center;  
+} 
+.nav-item li{ 
+    margin-left: 35px; 
+    font-size: 18px; 
+    font-weight: 500;
+} 
+/* Banner Style */
+.banner-info{ 
+    text-align: center;
+
+} 
+.banner-title{ 
+    margin-top: 100px;
+}  
+.banner-title h1{ 
+    font-size: 50px; 
+    font-weight: 700;
+}
+.banner-des{ 
+    margin: 30px 0;
+} 
+.btn{ 
+    width: 140px; 
+    height: 45px; 
+    border-radius: 5px; 
+    color: #ffff; 
+    background-color: var(--primary-color) ; 
+    border: 0px; 
+    margin-bottom: 50px;
+}  
+.btn:hover{ 
+    background-color:  white;
+    border: 1px solid;
+    color: var(--primary-color);
+}
+
+.banner-img{
+    width: 100%;   
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.img{ 
+    width: 1440px;
+    height: 410px;
+    padding: 0px 240px;
+} 
+
+
+/* Feature Section Style */
+.feature-sec{ 
+    margin-top: 90px;
+    display: flex; 
+    padding: 0px 300px; 
+    width: 100%; 
+}
+.feature-img{ 
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    gap: 15px; 
+} 
+.feature-img img{ 
+    width: 160px; 
+    height: 160px;
+}  
+.feature-info{ 
+    margin-left: 75px; 
+    display: grid; 
+    align-items: center;
+} 
+.feature-title{ 
+    font-size: 35px;
+}
+.color-1{
+    color: var(--third-color);
+} 
+.color-2{
+    color: var(--primary-color);
+}
+.feature-des{ 
+   font-size: 16px;
+   font-weight: 500;
+} 
+
+
+/* Experience Section Style  */ 
+.experience{ 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    margin: 100px 200px; 
+    gap: 30px;
+}
+.experience-title{ 
+    border-left: 4px solid var(--primary-color); 
+    margin-bottom: 20px; 
+    padding-left: 5px;
+}
+.experience-des{ 
+    margin-bottom: 20px;
+} 
+.info{
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 2px 1px 20px 0px #e5e5e5;
+    border-radius: 8px;
+}
+.experience-img img{ 
+    width: 100%;  
+    position: relative;
+} 
+.my-exp{ 
+    background-color: var(--primary-color); 
+    height: 100px; 
+    width: 200px;
+    display: grid; 
+    align-items: center; 
+    justify-content: center; 
+    color: #ffff; 
+    line-height: 2px; 
+    position: absolute;
+    margin: -79px -54px;
+    border-radius: 7px;
+}
+.my-exp:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid;
+}
+
+/* Some Facts Style  */  
+.facts-info{ 
+    margin: 30px 200px;
+} 
+.facts-info h1{ 
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.facts-info p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.facts-card-info{ 
+    display: flex; 
+    gap: 100px; 
+    justify-content: center; 
+    margin-top: 50px;
+ }  
+
+ /* Facts Animation Style */
+.facts-card{ 
+    border: 1px solid var(--primary-color); 
+    border-radius: 10px; 
+    padding: 15px; 
+    text-align: center; 
+    width: 20%;
+    background-color: var(--primary-color);
+    color: white;
+    animation: color-changer 10s;
+}
+.facts-card:hover{
+    background-color: white;
+    color: black;
+}
+@keyframes color-changer{ 
+    0%   {
+        background-color: blue; 
+        color: #fff;
+    }
+    50%  {
+        background-color: red; 
+        color: #fff;
+    }
+    100% {
+        background-color: rgb(79, 243, 3);
+        border: 1px solid rgb(79, 243, 3);
+    }
+}
+
+
+/* Sponser style  */
+.sponser{ 
+    text-align: center; 
+    margin: 100px 0px;
+} 
+.sponser-title{ 
+    font-size: 34px;
+    font-weight: 700;
+}
+.sponser-des{ 
+    margin: 25px 0px;
+}
+.sponser-cards{ 
+    margin: 30px 0px;
+    display: flex; 
+    gap: 50px; 
+    justify-content: center;
+} 
+ /* Footer Section */
+.footer{  
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: #ffff;
+    padding: 30px;
+}
+.copy-right{ 
+    text-align: center; 
+    height: 55px;
+    width: 100%; 
+    padding: 15px;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: black;
+}
+
+/* For max-width 576px */
+@media screen and (max-width:576px){
+    header{ 
+        width: 576px;
+    } 
+    .navbar{
+        flex-direction: column; 
+        margin: 0px;
+    } 
+    .nav-item{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 100px;
+    }  
+    .banner-img{ 
+        width: 310px;
+        height: 251px; 
+        padding: 0;
+    }
+    .img{
+        padding: 0 0;
+    }
+    .feature-img img{ 
+        height: 400px; 
+        width: 400px;   
+    } 
+    .feature-sec{
+        display: grid; 
+        grid-template-columns: repeat(1,1fr); 
+        padding: 0; 
+    }
+    .feature-img{ 
+        padding: 10px 87px;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-des{
+        margin: 19px 0px;
+    } 
+    .feature-info{ 
+        margin: 20px 70px;
+    }
+    .experience{ 
+        grid-template-columns: 100%; 
+        margin: 0px 15px; 
+        align-items: center;
+    } 
+    .my-exp{ 
+        margin: -40px 190px;
+    } 
+    .facts-info{ 
+        margin: 100px 0px;
+    } 
+    .facts-info h1, p{
+        margin-left: 20px;
+    }
+    .facts-card-info{ 
+        flex-direction: column; 
+        align-items: center;
+    }  
+    .facts-card{ 
+        width: 350px; 
+        height: 200px;
+    }
+    .sponser-cards{ 
+        display: grid; 
+        grid-template-columns: repeat(2,1fr);  
+    }
+    .footer{
+        width: 100%;
+    }
+    .copy-right{
+        width: 100%;
+        height: 170%;
+    }
+} 
+
+
+
+
